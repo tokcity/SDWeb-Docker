@@ -13,6 +13,3 @@ USER stablediffusion
 WORKDIR /home/stablediffusion
 RUN wget https://raw.githubusercontent.com/AUTOMATIC1111/stable-diffusion-webui/master/webui.sh && \
     chmod +x webui.sh
-
-# Run the webui.sh script as stablediffusion user
-CMD ["./webui.sh"]
