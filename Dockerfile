@@ -1,5 +1,5 @@
 # Use the Debian 11 image as the base
-FROM debian:11
+FROM debian:bullseye-slim
 
 # Update the package list and install required packages
 RUN apt-get update && \
