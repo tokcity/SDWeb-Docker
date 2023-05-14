@@ -3,7 +3,7 @@ FROM debian:bullseye-slim
 
 # Update the package list and install required packages
 RUN apt-get update && \
-    apt-get install -y wget git python3 python3-venv sudo
+    apt-get install -y wget git python3 python3-venv sudo ffmpeg libsm6 libxext6 google-perftools
 
 # Create the stablediffusion user and set their home directory
 RUN useradd -m -d /home/stablediffusion -s /bin/bash stablediffusion
